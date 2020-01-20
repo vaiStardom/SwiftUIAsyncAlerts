@@ -1,5 +1,7 @@
 # SwiftUI and Async Alerts
 
+About the author: https://pauladdy.com
+
 Hello,
 
 Using SwiftUI, I wanted to present the results of an async operation, similar to a network operation. I needed to do this via a SwiftUI `Alert` declared in a SwiftUI `View`. But, the async operation was performed outside the view.
@@ -131,8 +133,10 @@ AsyncOperationButton(result: $showAlert,
 When the button changes the values of `result`, `resultTitle`, and `resultMessage`, the ContentView's properties react to these changes. For example, since `showAlert` is binded to `result`, the alert will present itself thanks to its property `isPresented`.
 
 You can see the complete project here:
-https://github.com/vaiStardom/AlertFromOutsideOfView/tree/develop
+https://github.com/vaiStardom/SwiftUIAsyncAlerts/tree/develop
 
-Hope this can help anybody.
+Hope this can help anyone.
 
 Cheers!
+
+Paul
